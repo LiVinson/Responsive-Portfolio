@@ -1,0 +1,244 @@
+/*General: background image and font type for all pages*/
+* {
+    box-sizing: border-box;
+    color:#777777;
+    background: #ffffff;
+}
+
+body {
+    background-image: url("../images/concrete_seamless.png");
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 1.75
+}
+
+a:hover {
+    color: #4aaaa5;
+    font-weight: bold;
+}
+
+a:visited {
+   color: #034f84;
+}
+
+
+/*header start: 1 element across the entire page (headerfull), header inside of headerfull, centered. Header set to flex 
+container. Contains Name and Links elements. Spaced to ediges of the header div using justify-content: space between.*/
+
+.headerfull {
+    width: 100%;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 960px;
+    margin: auto;
+    font-weight: bold;
+    color: #ffffff
+ }
+
+.name {
+    background: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    width: fit-content;
+    padding: 15px 18px 15px 18px;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.aboutlink,
+.contactlink, 
+.portfoliolink {
+    border-right: 1px solid #dddddd;
+    padding-left:10px;
+    padding-right: 15px;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.contactlink {
+    border: none;
+}
+
+/******header end:*******/
+
+/****Footer: Same on all pages******/
+.footer {
+    width: 100%;
+    background-color: #666666;
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    text-align: center;
+    border-top: 5px solid #4aaaa5;
+    color: #cccccc;
+}
+
+.copyright {
+    background-color: #666666;
+    color: #dddddd;
+    font-size: 12px;
+}
+/****Footer end****/
+
+/*website general Container to be used for all pages*/
+
+.container {
+    display: flex;
+    width: 960px;
+    margin: auto;
+    justify-content: space-between; 
+    background: none;    
+}
+
+ /***Sidebar***/
+ .connect {
+    width: 270px;  
+    border: 1px solid #dddddd;
+    height: fit-content;
+}
+
+.connectHeader {
+    border-bottom: 1px solid #dddddd;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 24px;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 25px;
+    color: #4aaaa5;
+    padding: 25px 0px 20px 0px;
+    font-weight: bold;
+}
+
+.icons {
+    width: fit-content;
+    margin:auto;
+    margin-bottom: 40px;
+}
+
+.github:hover {
+    opacity:.75;
+    border-bottom:2px solid #666666;
+}
+
+.linkedin:hover {
+    opacity:.75;
+    border-bottom:2px solid #666666;
+}
+
+.stack:hover {
+    opacity:.75;
+    border-bottom:2px solid #666666;
+}
+
+.github,
+.linkedin, 
+.stack {
+    width: 64px;
+    height: 64px;
+    margin-left: 5px;
+    box-sizing: content-box;
+    padding-bottom: 2px;
+}
+
+
+/**Sidebar end**/
+
+
+/***Main Content Section (General)**/
+
+.mainContent {
+    width: 650px;
+    border: 1px solid #dddddd;
+    padding-bottom: 15px;
+ }
+ .mainHeader {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 30px;
+    width: 590px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #4aaaa5;
+    font-weight: bold;
+    border-bottom:2px solid #dddddd;
+}
+
+/*About Me Page (Index.html)*/
+
+.mainBody {
+    width: 590px;
+    margin: auto;
+}
+
+#profilepic {
+    margin-right:20px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.para1,
+.para2 {
+    margin-bottom:15px;
+}
+
+/*Contact Page*/
+
+#messageBox {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#submit {
+    background: #4aaaa5;
+    padding: 5px 15px 5px 15px;
+    color: #ffffff;
+}
+
+#submit:hover {
+    padding: 6px 16px 6px 16px;
+    opacity:.75;
+}
+
+/*Portfolio Page*/
+
+.mainPortfolio {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolioPics {
+    width: 280px;
+    height: 210px;
+}
+
+.portfolio {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.bannertext {
+    background: #4aaaa5;
+    position: absolute;
+    bottom: 20px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 20px;
+    color: #ffffff;
+    z-index: 5;
+    padding-top:10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width:100%;
+}
+
+.portfolio:hover {
+    outline: 3px solid #4aaaa5;
+    outline-offset:10px;
+}

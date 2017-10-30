@@ -1,0 +1,86 @@
+<!--CONTACT PAGE-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+ <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <title>Lisa Vinson</title>
+
+</head>
+
+<body>
+    <!--Header:
+    headerfull is the entire header stretched across the entire page. The header div has a width of 960
+    and is the parent for the h1 name, and 3 elements for About, Portfolio, and Contact (links).
+    Headerfull should have set padding and bottom margin (same on all pages). -->
+
+    <div class="headerfull">
+            <div class="header">
+                <h1 class="name">Lisa Vinson</h1>
+    
+                <div class="links">
+                    <a class="aboutlink" href="index.html">About</a>
+                    <a class="portfoliolink" href="portfolio.html">Portfolio</a>
+                    <a class="contactlink" href="contact.html">Contact</a>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+    <!--The container div should be 960 and encompass the About Me Container and the Connect with Me sidebar.-->
+
+    <div class="container">
+    
+        <section class="contact mainContent">
+
+            <h1 class="mainHeader">Contact</h1>
+
+            <div class="mainBody">
+                <form>
+                    Name <br>
+                    <input type="text"><br>
+
+                    Email <br>
+                    <input type="email"><br>
+
+                    Message<br>
+                                       
+                    <textarea rows="10" cols="20" id="messageBox" wrap="hard">
+                    
+                    </textarea><br>
+
+                    <input type="submit" value="Submit" id="submit">
+
+                </form>
+    
+            </div>
+
+        </section>
+
+        <div class="connect"> 
+                <h2 class="connectHeader">Connect with Me</h2>
+                <div class="icons">
+                    <a href="https://github.com/LiVinson" target="_blank"> <img class="github" src="assets/images/githubicon.png" alt="Github account Link"></a>
+                    <a href="https://www.linkedin.com/in/lisavinson1" target="_blank"> <img class="linkedin" src="assets/images/linkedicon.png" alt="LinkedIn account Link"></a>
+                    <a href="https://stackoverflow.com/users/7484108/li-vinson?tab=profile" target="_blank"><img class="stack" src="assets/images/stackicon.png" alt="Stack Overflow Icon"></a>
+                </div>
+    
+        </div>
+
+    </div>
+
+    <!--Footer: Should stretch across the entire page, with a padding similar to the header.
+        Make it sticky to the bottom of the window -->
+    <footer class="footer">
+        <p class="copyright">Copyright &#169; 2017 Lisa Vinson</p>
+    </footer>
+
+</body>
+
+</html>
