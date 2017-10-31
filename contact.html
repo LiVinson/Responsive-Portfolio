@@ -8,12 +8,13 @@
 
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lisa Vinson</title>
 
 </head>
 
 <body>
+    <div class="wrapper">
     <!--Header:
     headerfull is the entire header stretched across the entire page. The header div has a width of 960
     and is the parent for the h1 name, and 3 elements for About, Portfolio, and Contact (links).
@@ -37,17 +38,17 @@
 
     <div class="container">
     
-        <section class="contact mainContent">
+        <section class="mainContent">
 
             <h1 class="mainHeader">Contact</h1>
 
             <div class="mainBody">
                 <form>
                     Name <br>
-                    <input type="text"><br>
+                    <input type="text" id="text"><br>
 
                     Email <br>
-                    <input type="email"><br>
+                    <input type="email" id="email"><br>
 
                     Message<br>
                                        
@@ -80,7 +81,7 @@
     <footer class="footer">
         <p class="copyright">Copyright &#169; 2017 Lisa Vinson</p>
     </footer>
-
+</div>
 </body>
 
 </html>

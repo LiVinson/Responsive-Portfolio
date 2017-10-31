@@ -20,6 +20,9 @@ a:visited {
    color: #034f84;
 }
 
+.wrapper {
+    background: none;
+}
 
 /*header start: 1 element across the entire page (headerfull), header inside of headerfull, centered. Header set to flex 
 container. Contains Name and Links elements. Spaced to ediges of the header div using justify-content: space between.*/
@@ -61,6 +64,7 @@ container. Contains Name and Links elements. Spaced to ediges of the header div 
 
 .contactlink {
     border: none;
+    padding-right:0px;
 }
 
 /******header end:*******/
@@ -139,7 +143,7 @@ container. Contains Name and Links elements. Spaced to ediges of the header div 
 .stack {
     width: 64px;
     height: 64px;
-    margin-left: 5px;
+    margin:0 3px;
     box-sizing: content-box;
     padding-bottom: 2px;
 }
@@ -180,6 +184,8 @@ container. Contains Name and Links elements. Spaced to ediges of the header div 
     margin-right:20px;
     margin-bottom: 20px;
     float: left;
+    width: 275px;
+    height: 275px;
 }
 
 .para1,
@@ -241,4 +247,185 @@ container. Contains Name and Links elements. Spaced to ediges of the header div 
 .portfolio:hover {
     outline: 3px solid #4aaaa5;
     outline-offset:10px;
+}
+
+/**MEDIA QUERIES**/
+
+/**Max Width: `980px**/
+@media screen and (max-width: 980px) {
+    
+    .wrapper {
+        margin: auto;
+        border: .5px solid red;
+    }
+
+    .header,
+    .container {
+        width: 700px;
+    }
+      
+    .mainContent {
+        width: 60%;
+    }
+
+    .connect {
+        width: 35%;
+    }
+    
+    .mainBody,
+    .mainHeader {    
+        width: 90%;
+    }
+    .mainBody {
+        justify-content:center;
+    }
+
+    .image {
+        margin: auto;
+        width:fit-content;
+    }
+    #profilepic {
+        float: none;
+        width:375px;
+        height:375px;
+    }
+
+    .icons{ 
+        display:flex;
+        justify-content:space-between;
+        width:fit-content;
+        margin: auto;
+    }
+
+    form,
+    #text,
+    #email {
+        width:375px;
+    }
+ 
+    .container,
+    .portfolioHeader{
+        width: 700px;
+    }
+
+    .portfolioPics {
+        width: 375px;
+        height: 278px;
+    }
+}
+
+/**Max Width: `768px**/
+@media screen and (max-width: 768px) {
+    .wrapper {
+        margin: auto;
+        border: .5px solid blue;
+    }
+
+    .header,
+    .container {
+        width: 635px;
+    }
+
+    .container {
+        display:block;
+    }
+
+    .mainPortfolio {
+        justify-content: space-between;
+    }  
+    
+        
+    .mainContent {
+        width: 100%;
+    }
+
+    .connect {
+        width: 100%;
+        margin: 25px 0;
+    }
+
+    .image {
+        margin: auto;
+        width:fit-content;
+        float: left;
+    }   
+
+    #profilepic {
+        float: left;
+        width:300px;
+        height:300px;
+    }
+    .connectHeader,
+    .icons {
+        margin-left: 30px;
+        margin-bottom:25px;
+    }
+
+    .portfolioPics {
+        width: 275px;
+        height: 210px;
+    }
+
+    form,
+    #text,
+    #email {
+        width:570px;
+    }
+}
+/**Max Width: `640px**/
+@media screen and (max-width: 640px) {
+    .header {
+        display: block;
+         background: #4aaaa5;
+         width:100%;
+    }
+
+    .name {
+        margin: auto;
+    }
+
+    .links{
+        padding: 12px;
+        display: flex;
+    }
+
+    .aboutlink,
+    .contactlink, 
+    .portfoliolink {
+        width:33%;
+        text-align:center;
+    }
+
+    .container {
+        display:block;
+        width: 600px;
+    }
+    
+    form,
+    #text,
+    #email {
+        width:100%;
+    }
+    .para1,
+    .para2 {
+        clear:both;
+    }
+    
+    .image {
+        float: none;
+    }
+    #profilepic {
+        width:400px;
+        height:400px;
+    }
+
+    .mainPortfolio {
+        justify-content: center;
+    } 
+
+    .portfolioPics {
+        width: 538px;
+        height: 410px;
+    }
+
 }

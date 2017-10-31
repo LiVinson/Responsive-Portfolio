@@ -8,12 +8,16 @@
 
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Lisa Vinson</title>
 
 </head>
 
 <body>
+
+<div class="wrapper">
+   
     <!--Header:
     headerfull is the entire header stretched across the entire page. The header div has a width of 960
     and is the parent for the h1 name, and 3 elements for About, Portfolio, and Contact (links).
@@ -37,14 +41,15 @@
 
     <div class="container">
 
-        <section class="aboutme mainContent">
+        <section class="mainContent">
 
             <h1 class="mainHeader">About Me</h1>
 
             <div class="mainBody">
 
-                <img id="profilepic" src="assets/images/profilepic1.JPG" alt=profilepictire width=275 height=275>
-
+                <div class="image">
+                <img id="profilepic" src="assets/images/profilepic1.JPG" alt=profilepictire>
+                </div>   
                 <p class="para1">I am a native Floridian, born and raised in Orlando. After graduating from the University of Florida, I briefly
                     moved to Baton Rouge, LA where I taught high school math before relocating to Charlotte, NC. While there,
                     I worked in HR as a recruiting coordinator and client delivery manager. I recently relocated back to
@@ -79,7 +84,8 @@
     <footer class="footer">
         <p class="copyright">Copyright &#169; 2017 Lisa Vinson</p>
     </footer>
-
+  
+</div>
 </body>
 
 </html>
