@@ -256,7 +256,6 @@ container. Contains Name and Links elements. Spaced to ediges of the header div 
     
     .wrapper {
         margin: auto;
-        border: .5px solid red;
     }
 
     .header,
@@ -318,7 +317,6 @@ container. Contains Name and Links elements. Spaced to ediges of the header div 
 @media screen and (max-width: 768px) {
     .wrapper {
         margin: auto;
-        border: .5px solid blue;
     }
 
     .header,
