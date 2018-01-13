@@ -70,15 +70,22 @@ container. Contains Name and Links elements. Spaced to ediges of the header div 
 /******header end:*******/
 
 /****Footer: Same on all pages******/
+.footerContainer {
+    height:fit-content;
+    position:relative;
+    margin-top: 30px;
+}
+
 .footer {
     width: 100%;
     background-color: #666666;
-    margin-top: 30px;
+    
     padding-top: 35px;
     padding-bottom: 15px;
     text-align: center;
     border-top: 5px solid #4aaaa5;
     color: #cccccc;
+    position:absolute;
 }
 
 .copyright {
